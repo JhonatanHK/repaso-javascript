@@ -1,0 +1,38 @@
+nav,a {
+    font-family: 'MesloLGS Nerd Font Mono';
+    font-size: 1.5em;
+    color: #44FFB1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0077b6;
+}
+body {
+    background-color: #011423;
+    padding: 20px;
+
+}
+
+span.nombre {
+    display: block;
+    font-family: 'MesloLGS Nerd Font';
+    font-size: 2.5em;
+    color: #A277FF;
+    font-weight: bold;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 15ch;
+    animation: typing 2s steps(15) ,
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {width: 0}
+}
+
+@keyframes blink {
+    50% {border-color: transparent}
+}
