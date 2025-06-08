@@ -22,16 +22,27 @@ span.nombre {
     color: #A277FF;
     font-weight: bold;
     white-space: nowrap;
-    border-right: 4px solid;
+    border-right: 4px solid #A277FF;
     width: 15ch;
-    animation: typing 2s steps(15) ,
+    /* animation: typing 3s steps(18) ,
     blink .5s infinite step-end alternate;
+    overflow: hidden; */
+    animation: typeAndErase 6s infinite,
+    blink 0.5s infinite step-end alternate;
     overflow: hidden;
+}
+
+@keyframes typeAndErase {
+    0% {width: 0}
+    50% {width: 15ch}
+    100% {width: 0}
 }
 
 @keyframes typing {
     from {width: 0}
+    to {width: 15ch} 
 }
+
 
 @keyframes blink {
     50% {border-color: transparent}
